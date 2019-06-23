@@ -1,10 +1,18 @@
 ## Welcome to my website!
 
 ##### Table of Contents  
-1. [ Description. ](#desc)
-2. [ Usage tips. ](#usage)
+1. [Khan Academy - Fish Tank (Intro to JS](#fish)
+2. [Khan Academy - JQuery Quiz](#quiz)
+3. [Khan Academy - Event Invite (Intro to HTML/CSS)](#invite)
+4. [Khan Academy - Selection sort visualizer (Algorithms)](#sort)
+5. [Khan Academy - Paint Splatter (Natural Simulations](#splat)
+6. [Khan Academy - Word Game](#word)
+7. [Khan Academy - Asteroids Spaceship](#roid)
+8. [Grade 11 - Twenty One Game](#21)
+9. [Grade 11 - Summative](#sum)
+10.[Coding Challenge - Fire](#fire)
 
-<a name="desc"></a>
+<a name="fish"></a>
 ### Khan Academy - Fish Tank
 
 ```
@@ -38,7 +46,7 @@ drawFish (209,186,15,200);
 drawFish (133,85,126,99);
 ```
 
-<a name="desc"></a>
+<a name="quiz"></a>
 ### Khan Academy - JQuery Quiz
 
 ```
@@ -90,49 +98,156 @@ $("#result").text("Try again!");
 });
 </script>
 ```
-### Khan Academy - Mad Libs
+<a name="invite"></a>
+### Khan Academy - Event Invite
 
 ```
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8" />
-  <title>Challenge: Mad Libs</title>
- </head>
- <body>
- 
-    <h1>Mad Libs</h1>
-     
-    <ul>
-      <li>Noun: <input type="text" id="noun"></li>
-      <li>Adjective: <input type="text" id="adjective"></li>
-      <li>Someone's Name: <input type="text" id="person"></li>
-    </ul>
-     
-    <button id="lib-button">Lib it!</button>
-      
-    <p>Generated story: 
-    <span id="story"></span>
-    </p>
- 
-    <script>
-        var libButton = document.getElementById('lib-button');
-        var libIt = function() {
-            var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "??Your story here";
-            var noun = document.getElementById("noun").value;
-            var adjective = document.getElementById("adjective").value;
-            var person = document.getElementById("person").value;
-            storyDiv.innerHTML = noun+" noun "+adjective+" adjective "+ person;
-        };
-        libButton.addEventListener('click', libIt);
+    <head>
+
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+         body {
+            background-color: rgb(232, 162, 232);
+        }
+        h1
+         {
+           color: rgb(30, 58, 245);
+        }
+         h2
+         {
+           color: rgb(30, 58, 245);
+        }
+            .info
+            {
+                  background: rgb(182, 199, 219); 
+                  height:439px;
+                  float: right;
+                  width: 30%;
+                   margin-left: 6px;
+            margin-bottom: 13px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>You're invited!</h1>
+        <h2>To something!</h2>
         
-    </script>
-  
- </body>
+        <p>The details:</p>
+        <ul>
+            <li>Arrive</li>
+            <li>Party</li>
+        </ul>
+         <div class="info">
+         
+        <p> 
+        A party is a gathering of people who have been invited by a host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion. A party will typically feature food and beverages, and often music and dancing or other forms of entertainment. In many Western countries, parties for teens and adults are associated with drinking alcohol such as beer, wine, or distilled spirits.
+        </p>
+        </div>
+       <img id="creature" src="https://www.kasandbox.org/programming-images/seasonal/fireworks-scattered.png" width="250">
+    </body>
 </html>
 ```
+<a name="sort"></a>
+### Khan Academy - Selection sort visualizer
 
+```
+var x=25;
+var y=64;
+
+//Displays the array
+var displayArray = function(array, lowest, index) {
+    fill(101, 163, 42);
+    textFont(createFont("monospace"), 12);
+    for(var i=0; i<array.length; i++){
+        text(array[i], x, y);
+        strokeWeight(4);
+        //Blue for the maximum values
+        if (array[i] === array[index])
+        {
+            stroke(9, 0, 255);
+            line(x-2, y+6, x+11, y+6);
+        }
+        //Red for the minimum values
+        if (array[i] === array[lowest])
+        {
+            stroke(224, 36, 36);
+            line(x-2, y+2, x+11, y+2);
+        }
+        x=x+49;
+    }
+    y=y+25;
+    x=25;
+};
+
+//Swaps the first 2 values
+var swap = function(array, first, second) {
+    var temp = array[first];
+    array[first] = array[second];
+    array[second] = temp;
+};
+
+//Checks if there's a smaller value in the array
+var indexmin = function(array, start) {
+    var minval = array[start];
+    var mindex = start;
+
+    for(var i = mindex + 1; i < array.length; i++) {
+        if(array[i] < minval) {
+            mindex = i;
+            minval = array[i];
+        }
+    } 
+    return mindex;
+}; 
+
+//Loop that checks and sends out information to other arrays
+var selectionSort = function(array) {
+    var minimum;
+    for (var i=0; i<array.length; i++){
+        var minimumIndex = i;
+        minimum = indexmin(array, i);
+        displayArray(array, minimum, minimumIndex);
+        swap(array, i, minimum);
+    }
+};
+
+//Lines
+strokeWeight(2);
+stroke(5, 0, 0);
+line(0, 150, 400, 150);
+line(0, 250, 400, 250);
+line(0, 325, 400, 325);
+
+//Example text
+fill(0, 0, 0);
+textSize(16);
+text("Ex 1", 220, 102);
+text("Ex 2", 220, 207);
+text("Ex 3", 220, 294);
+text("Ex 4", 220, 370);
+
+//Arrays with assertions
+var array = [3, 2, 7, 5];
+selectionSort(array);
+Program.assertEqual(array, [2, 3, 5, 7]);
+
+var array2 = [1, 3, -3, -1];
+selectionSort(array2);
+Program.assertEqual(array2, [-3, -1, 1, 3]);
+
+var array3 = [10, 23, 14];
+selectionSort(array3);
+Program.assertEqual(array3, [10, 14, 23]);
+
+var array4 = [11.3, 11.6, 11.125];
+selectionSort(array4);
+Program.assertEqual(array4, [11.125, 11.3,11.6 ]);
+```
+<a name="splat"></a>
 ### Khan Academy - Paint Splatter
 
 ```
@@ -175,7 +290,7 @@ draw = function() {
     p.display();
 };
 ```
-
+<a name="word"></a>
 ### Khan Academy - Word Game
 
 ```
@@ -250,7 +365,7 @@ draw = function() {
             event.preventDefault();
             var $answer = $(this).find('[type=text]'); 
 ```
-
+<a name="roid"></a>
 ### Khan Academy - Asteroids Spaceship
 
 ```
@@ -365,13 +480,14 @@ draw = function() {
     car.display();
 };
 ```
+<a name="21"></a>
 ### Grade 11 - Twenty One Game
 
 ```
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $  Alexander Au                 $
 $  10/23/2017                   $
-$  Test cases                   $
+$  Twenty One Game              $
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 /**/
@@ -547,330 +663,8 @@ int main()
 }
 
 ```
-
-### Grade 11 - String Manipulation
-
-```
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-$  Alexander Au                 $
-$  10/31/2017                   $
-$  String Manipulation          $
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-
-#include <iostream>
-#include <windows.h>
-#include <algorithm>
-#include <ctime>
-#include <conio.h>
-#include <stdlib.h>
-#include <iomanip>
-#include <string.h>
-#include <math.h>
-#include <ctype.h>
-
-using namespace std;
-
-int main()
-{
-	
-	start:
-	int room1;
-	cout << "Which room would you like to got to?\n";
-	cout << "1.Average name length program\n";
-	cout << "2.Nickname program\n";
-	cout << "3.Palindrome program\n";
-	cout << "4.Pig Latin program\n";
-	cout << "5.Vowel replacement program\n";
-	cout << "6.Word Pattern program\n";
-	cout << "7.Sentence Pattern program\n";	
-	cout << "8.Replacement program\n";
-	cin >> room1; 
-	
-	if (room1==1) 
-	{
-		system ("cls");
-		goto length1;
-		
-	}
-		
-	else if (room1==2) 
-	{
-		system ("cls");
-		goto nick;
-		
-	}
-	
-	else if (room1==3) 
-	{
-		system ("cls");
-		goto palin;
-		
-	}
-	
-	else if (room1==4) 
-	{
-		system ("cls");
-		goto platin;
-		
-	}
-	
-	else if (room1==5) 
-	{
-		system ("cls");
-		goto vowelrep;
-		
-	}
-	else if (room1==6) 
-	{
-		system ("cls");
-		goto wordpattern;
-		
-	}
-	else if (room1==7) 
-	{
-		system ("cls");
-		goto sentpattern;
-		
-	}
-	else if (room1==8) 
-	{
-		system ("cls");
-		goto placere;
-		
-	}
-	
-	
-	{
-		length1:
-	string name, desc;
-	float len,total,count=0;
-	
-	
-	while (desc!="No")
-	{
-		count=count+1;
-	cout << "Enter a name\n";
-	cin >> name;
-	
-	len = name.length();
-	
-	total=(total+len)/count;
-
-	cout << "Would you like to enter another name? [Yes/No] ";
-	cin >> desc;
-	
-	}
-	
-	cout << "The average word length was: " <<total;
-	
-		return (0);
-	}
-
-	{
-		nick:
-		int leng;
-		string firstname,lastname,firstname1,lastname2;
-			
-			
-		cout << "Please enter your first name: ";
-		cin >>firstname;
-		cout << "Please enter your last name: ";
-		cin >>lastname;
-		
-		leng = lastname.length();
-		
-		firstname1.append (firstname,0,3);
-		lastname2.append (lastname, leng-2 , 2);
-		
-		cout << "Your name was: " << firstname << " " << lastname << "\n";
-		cout << "Your nickname will be: " <<firstname1<<lastname2;
-		
-		return (0);
-		
-	}
-	
-	{
-		palin:
-		
-		int i, leno;	
-		string input,quit,roop;
-		
-		while (quit != "QUIT")
-		{
-	
-		cout << "Please enter a word\n";
-		cin >> input;
-		
-		for (i=input.size()-1;i>=0;i--)
-		{
-			
-		cout<< input[i];
-		
-		
-		}
-		
-		if (input == string(input.rbegin(), input.rend())) 
-		{
-    	cout << "\n" << input << " is a palindrome";
-		}
-		
-		cout << "Would you like to quit?\n";
-		cin >> quit;
-		
-		leno=quit.length();
-		
-		for (int bleh=0; bleh < leno; bleh++)
-		{
-			quit[bleh]=toupper(quit[bleh]);
-		}
-		
-		
-		
-		}
-		
-	}
-		
-		return (0);
-
-	
-	{
-		platin:
-		
-		int lengt;
-		string pigword,first;
-		
-		cout << "Please enter a word: \n";
-		cin >> pigword;
-		
-		
-		first=pigword;
-		lengt = pigword.length();
-		pigword.replace (0,1 ,"");
-		pigword.append(first,0,1);	
-		
-	
-		
-		cout << "The word in piglatin is: " << pigword.replace(lengt, 1 ,"ay") ;
-		
-		return (0);
-		
-	}
-	
-	
-	{
-		vowelrep:
-		
-		string wordent;
-		
-		cout << "Please enter a word: \n";
-		cin >> wordent;
-		
-		replace(wordent.begin(), wordent.end(), 'a','*');
-		replace(wordent.begin(), wordent.end(), 'e','*');
-		replace(wordent.begin(), wordent.end(), 'i','*');
-		replace(wordent.begin(), wordent.end(), 'o','*');
-		replace(wordent.begin(), wordent.end(), 'u','*');
-		
-		cout << "The new word is: " <<wordent;
-		
-		return (0);
-		
-	}
-	
-	
-	{
-		wordpattern:
-		string enterboi,patternboi;
-		int found;
-		
-		
-		cout << "Please enter a word: \n";
-		cin >> enterboi;
-		
-		cout << "Please enter a pattern: \n";
-		cin >> patternboi;
-		
-		found = enterboi.find(patternboi);
-		
-		if (found > 0) 
-		{
-			cout << "The pattern has been found in the program";
-			
-		}
-		else if (found <= 0) 
-		{
-			cout << "The pattern has not been found in the program";
-			
-		}
-		
-		return (0);
-		
-		
-	}
-	
-	{
-		sentpattern:
-		
-		string sentboi, patterboi,newsentboi;
-		int patterncheck,patternlen;
-		
-		cout << "Please enter a word: ";
-		getline (cin,sentboi);
-		getline (cin,sentboi);
-		
-		cout << "Please enter a pattern: ";
-		cin >> patterboi;
-		
-		newsentboi=sentboi;
-		patternlen=patterboi.length();
-		
-		while ( patterncheck>=0)
-		{
-			
-		patterncheck=newsentboi.find(patterboi);
-		
-		if (patterncheck >=0)
-		{
-		newsentboi.replace(patterncheck,patternlen, ""); 
-		}
-		
-		
-		}
-		
-		cout << "The old sentence is: " <<sentboi<< "\n";
-		cout << "The pattern is : "<<patterboi<<"\n";
-		cout << "The new sentence is: "<<newsentboi<<"\n";
-	
-		return (0);
-		
-	}
-	
-	{
-		placere:
-		
-		string worddy;
-		int longth;
-		
-		cout << "Please enter a word: \n";
-		cin >> worddy;
-		
-		longth = worddy.length();
-		
-		for (int boi= 0; longth > boi; boi++)
-		{
-			cout << "%";
-			Sleep (500);
-		}
-		
-		cout << "\nHave a nice day";
-		
-		return (0);
-	}
-}
-
-```
-
-### Grade 11 -Summative
+<a name="sum"></a>
+### Grade 11 - Summative
 
 ```
 //Thomas Wilson & Alex Au 12/1/18
@@ -1576,7 +1370,7 @@ int loss()
 	return exit;
 }
 ```
-
+<a name="fire"></a>
 ### Coding Challenge - Fire
 
 ```

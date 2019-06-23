@@ -1,5 +1,6 @@
 ## Welcome to my website!
 
+<a name="start"></a>
 ##### Table of Contents  
 1. [Khan Academy - Fish Tank (Intro to JS)](#fish)
 2. [Khan Academy - JQuery Quiz](#quiz)
@@ -45,6 +46,10 @@ drawFish (316,298,84,156);
 drawFish (209,186,15,200);
 drawFish (133,85,126,99);
 ```
+This project was a good introduction into how 
+
+[Back to the Table of Contents](#start)
+
 
 <a name="quiz"></a>
 ### Khan Academy - JQuery Quiz
@@ -98,6 +103,9 @@ $("#result").text("Try again!");
 });
 </script>
 ```
+
+[Back to the Table of Contents](#start)
+
 <a name="invite"></a>
 ### Khan Academy - Event Invite
 
@@ -151,6 +159,9 @@ $("#result").text("Try again!");
     </body>
 </html>
 ```
+
+[Back to the Table of Contents](#start)
+
 <a name="sort"></a>
 ### Khan Academy - Selection sort visualizer
 
@@ -247,6 +258,10 @@ var array4 = [11.3, 11.6, 11.125];
 selectionSort(array4);
 Program.assertEqual(array4, [11.125, 11.3,11.6 ]);
 ```
+
+[Back to the Table of Contents](#start)
+
+
 <a name="splat"></a>
 ### Khan Academy - Paint Splatter
 
@@ -290,6 +305,9 @@ draw = function() {
     p.display();
 };
 ```
+
+[Back to the Table of Contents](#start)
+
 <a name="word"></a>
 ### Khan Academy - Word Game
 
@@ -365,6 +383,9 @@ draw = function() {
             event.preventDefault();
             var $answer = $(this).find('[type=text]'); 
 ```
+[Back to the Table of Contents](#start)
+
+
 <a name="roid"></a>
 ### Khan Academy - Asteroids Spaceship
 
@@ -480,6 +501,9 @@ draw = function() {
     car.display();
 };
 ```
+[Back to the Table of Contents](#start)
+
+
 <a name="21"></a>
 ### Grade 11 - Twenty One Game
 
@@ -1370,6 +1394,9 @@ int loss()
 	return exit;
 }
 ```
+[Back to the Table of Contents](#start)
+
+
 <a name="fire"></a>
 ### Coding Challenge - Fire
 

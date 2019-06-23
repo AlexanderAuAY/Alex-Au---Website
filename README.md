@@ -1,7 +1,7 @@
 ## Welcome to my website!
 
 ##### Table of Contents  
-1. [Khan Academy - Fish Tank (Intro to JS](#fish)
+1. [Khan Academy - Fish Tank (Intro to JS)](#fish)
 2. [Khan Academy - JQuery Quiz](#quiz)
 3. [Khan Academy - Event Invite (Intro to HTML/CSS)](#invite)
 4. [Khan Academy - Selection sort visualizer (Algorithms)](#sort)

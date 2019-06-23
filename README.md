@@ -5,12 +5,12 @@
 2. [Khan Academy - JQuery Quiz](#quiz)
 3. [Khan Academy - Event Invite (Intro to HTML/CSS)](#invite)
 4. [Khan Academy - Selection sort visualizer (Algorithms)](#sort)
-5. [Khan Academy - Paint Splatter (Natural Simulations](#splat)
+5. [Khan Academy - Paint Splatter (Natural Simulations)](#splat)
 6. [Khan Academy - Word Game](#word)
-7. [Khan Academy - Asteroids Spaceship](#roid)
+7. [Khan Academy - Asteroids Spaceship (Natural Simulations)](#roid)
 8. [Grade 11 - Twenty One Game](#21)
 9. [Grade 11 - Summative](#sum)
-10.[Coding Challenge - Fire](#fire)
+10. [Coding Challenge - Fire](#fire)
 
 <a name="fish"></a>
 ### Khan Academy - Fish Tank

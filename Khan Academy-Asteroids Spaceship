@@ -1,0 +1,110 @@
+//Left on the keyboard to turn left
+//Right on the keyboard to turn right
+
+//Switches to radians
+angleMode = "radians";
+
+var ship = function() {
+    this.position = new PVector(width/2, height/2);
+    this.velocity = new PVector(3, -0.5);
+    this.acceleration = new PVector(0, 0);
+    this.topspeed = 10;
+    this.xoff = 1000;
+    this.yoff = 0;
+    this.r = 10;
+};
+
+//Setting the ship's speed
+ship.prototype.update = function () {
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(this.topspeed);
+    this.position.add(this.velocity);
+    this.acceleration.mult(0);
+};
+
+ship.prototype.applyForce = function(force) {
+    this.acceleration.add(force);
+};
+
+
+//Function to turn left
+ship.prototype.turnLeft = function() {
+    var left= PVector.get(this.velocity);
+    left.rotate(-PI/3);
+    this.applyForce(left);
+    
+};
+
+//Function to turn right
+ship.prototype.turnRight = function() {
+     var right= PVector.get(this.velocity);
+    right.rotate(PI/3);
+    this.applyForce(right);
+};
+
+//Function to speed up
+ship.prototype.IamSpeed = function() {
+    var force= PVector.get(this.velocity);
+    force.normalize();
+    force.mult(3);
+    this.applyForce(force);
+    println("I AM SPEED");
+};
+
+
+//Ship's visual features
+ship.prototype.display = function () {
+    var angle = this.velocity.heading();
+    stroke(0, 0, 0);
+    strokeWeight(2);
+    fill(127, 127, 127);
+    
+    pushMatrix();
+    rectMode(CENTER);
+    translate(this.position.x, this.position.y);
+    rotate(angle);
+    fill(135, 135, 135);
+    rect(-31,3,12,12);
+    rect(-31,-17,12,12);
+    fill(255, 255, 255);
+    triangle(45,-6,-29,-34,-28,18);
+    
+    popMatrix();
+};
+
+//Checks the edges of the screen
+ship.prototype.checkEdges = function () {
+    if (this.position.x > width) {
+        this.position.x = 0;
+    } else if (this.position.x < 0) {
+        this.position.x = width;
+    }
+    
+    if (this.position.y > height) {
+        this.position.y = 0;
+    } else if (this.position.y < 0) {
+        this.position.y = height;
+    }
+};
+
+//Sets key commands
+var car = new ship();
+keyPressed = function(){
+    if (keyCode === LEFT){
+        car.turnLeft();
+    }
+    else if (keyCode === RIGHT){
+        car.turnRight();
+    }
+     else if (keyCode === 90){
+        car.IamSpeed();
+    }
+};
+
+//Displays the ship
+draw = function() {
+    background(0, 0, 0);
+    car.update();
+ car.checkEdges();
+    car.display();
+};

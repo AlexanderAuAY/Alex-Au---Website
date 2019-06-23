@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Word game </title>
+        <style>
+            body { font-family: Arial, sans-serif;}
+            form { font-size: 1.5em;}
+            
+            .scrambled, input, button {
+                font-family: monospace;
+                font-size: 2em;
+            }
+            
+            .correct{
+                display: none;
+                position: absolute;
+                top: 220px;
+                left: 0px;
+                background-color: yellow;
+                font-weight: bold;
+                border: solid 5px green;
+                border-radius: 25px;
+                height: 50px;
+                width: 150px;
+                text-align: center;
+            }
+            
+            .incorrect{
+                 display: none;
+                position: absolute;
+                top: 220px;
+                left: 0px;
+                background-color: pink;
+                font-weight: bold;
+                border: solid 5px red;
+                border-radius: 25px;
+                height: 50px;
+                width: 150px;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+    <h1>Word game!</h1>
+    
+    <div class="correct"><p>Correct, good job<p></div>
+    <div class="incorrect"><p>Incorrect, try again<p></div>
+    
+    <form id="joke-form">
+        <label>
+            Unscramble these letters to form a word:<br>
+            <span class="scrambled"></span><br>
+            <input type="text" size="10">
+        </label>
+        <button type="submit">Check</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var scrambled = ["rabdo","fnrieg","tianno","ocnea","eckch","mrasony","saec"];
+        var answers = ["board","finger","nation","ocean","check","masonry","case"];
+
+        var random = Math.floor((Math.random() * 7));
+        $(".scrambled").text(scrambled[random]);
+        $("#joke-form").on("submit", function(event){
+            event.preventDefault();
+            var $answer = $(this).find('[type=text]'); 

@@ -1,13 +1,14 @@
 ## Welcome to my website!
+Link to repo: https://github.com/AlexanderAuAY/Alex-Au---Website
 
 <a name="start"></a>
 ##### Table of Contents  
 1. [Khan Academy - Fish Tank (Intro to JS)](#fish)
-2. [Khan Academy - JQuery Quiz](#quiz)
+2. [Khan Academy - JQuery Quiz (Making webpages interactive with jQuery)](#quiz)
 3. [Khan Academy - Event Invite (Intro to HTML/CSS)](#invite)
 4. [Khan Academy - Selection sort visualizer (Algorithms)](#sort)
 5. [Khan Academy - Paint Splatter (Natural Simulations)](#splat)
-6. [Khan Academy - Word Game](#word)
+6. [Khan Academy - Word Game (Making webpages interactive with jQuery)](#word)
 7. [Khan Academy - Asteroids Spaceship (Natural Simulations)](#roid)
 8. [Grade 11 - Twenty One Game](#21)
 9. [Grade 11 - Summative](#sum)
@@ -46,7 +47,7 @@ drawFish (316,298,84,156);
 drawFish (209,186,15,200);
 drawFish (133,85,126,99);
 ```
-This project was a good introduction into how 
+This project was a good introduction and playground into how and what affects the coding of websites. For example, the usage of noStroke and the draw command. NoStroke removes the lines of the object, while the draw command displays the objects at a designated locations. Overall, Intro to JS was an effective tutorial on the basics of JS. The projects were the best part of the module as they allowed you creative freedom to show what you had just learned.
 
 [Back to the Table of Contents](#start)
 
@@ -103,6 +104,7 @@ $("#result").text("Try again!");
 });
 </script>
 ```
+This module was useful to learn how to expand the interactivity of a website, something extremely important in the creation of a website. Creating fun and engaging websites in this day and age is important to hold viewer interest which is the ultimate goal of any website. Overall, nothing in this module had a significant impact to me personally, but it was still fun to play around with and to see how stuff I had already learned in the previous module was expanded upon.
 
 [Back to the Table of Contents](#start)
 
@@ -159,6 +161,7 @@ $("#result").text("Try again!");
     </body>
 </html>
 ```
+This project was good as an addition onto the first module since it felt like a natural progression. This module and "Intro to JS" were a great start since they were simple and taught the basics and left a lot to be desired. This desire could be translated into an advancement into learning about and creating more complex websites. Overall, this module was stuck out to me since as previously stated, it felt like a natural progression from before and still retained the level of simplicity to keep me hooked.
 
 [Back to the Table of Contents](#start)
 
@@ -258,6 +261,7 @@ var array4 = [11.3, 11.6, 11.125];
 selectionSort(array4);
 Program.assertEqual(array4, [11.125, 11.3,11.6 ]);
 ```
+Algorithms are useful as they're like building and Ikea desk. It's difficult to know where to start and how to proceed, but once you have a process it's a a fast and simple procedure. The module was a lot more theoretical than the others, but promoted me to think more mathamatically and thoroughly, a useful skill especially for solving more comples coding problems. WIth coding you have the tools, you just need to know how and where to use them. Overall, this module was a different but appreciated break from the others and provided a nice insight onto coding.
 
 [Back to the Table of Contents](#start)
 
@@ -305,6 +309,7 @@ draw = function() {
     p.display();
 };
 ```
+This project was early on in the module but was still complex, something I appreciated in Natural Simulations. Natural Simulations felt like the peak of the Khan Academy experience. It introduced a lot of new and more complex function while holding your hand a lot less, a necessary skill for everyday life and especially in programming. Overall, the continuous natural habitat project felt like it had the most impact. You could really see the tangible of effects of your efforts and gave a nice sense of satifactions on it was completed.
 
 [Back to the Table of Contents](#start)
 
@@ -383,6 +388,8 @@ draw = function() {
             event.preventDefault();
             var $answer = $(this).find('[type=text]'); 
 ```
+My thoughts here are similar to the other JQuery project. It taught useful skills on how to make websites look nice and have engaging interactivity. Overall I didn't feel a significant impact from the project but I still enjoyed it.
+
 [Back to the Table of Contents](#start)
 
 
@@ -501,6 +508,7 @@ draw = function() {
     car.display();
 };
 ```
+My thoughts here are similar to the previous Natural Simulations project. It was complex and promoted you to think independantly which I liked and is a useful skill for life in general. Overall the continuous natural habitat project was the most engaging for me. 
 [Back to the Table of Contents](#start)
 
 
@@ -687,6 +695,9 @@ int main()
 }
 
 ```
+This project that I did last year was a game of Twenty One. It combined a lot that I had learned earlier in the course and pushed me to think creatively about how I wanted the process to go, a skill learned similar to Algorithms. Overall it was an enjoyable project that really left an impact on me as it was a culmination of everything I had done.
+[Back to the Table of Contents](#start)
+
 <a name="sum"></a>
 ### Grade 11 - Summative
 
@@ -1394,6 +1405,7 @@ int loss()
 	return exit;
 }
 ```
+This was the final project of the year during Grade 11 and really combined everything I had done thus far. I worked on it with someone else and we effectively split up the work while incorporating everything that we had to. Overall, I enjoyed this project as well since I had a chance to be creative and to work as a team.
 [Back to the Table of Contents](#start)
 
 
@@ -1480,3 +1492,4 @@ function mouseDragged() {
   }
 }
 ```
+The goal of this project was to create a project based off of Dan Shiffman's coding train examples. For my group, his example didn't translated well into the plans that we had, so we were forced to improvise and create somthing new with the idea of a fire. This project really pushed me to problem solve and think creatively with the fact that we had to come up with something from scratch from an idea. This will be a useful expreience to have later on if I ever decide to pursue programming even further. Overall the biggest impact that this project had was the moment previouly mentioned. I really allowed me to experiement and take things the way I wanted to.

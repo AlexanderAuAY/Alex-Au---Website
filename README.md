@@ -4,7 +4,7 @@ Link to repo: https://github.com/AlexanderAuAY/Alex-Au---Website
 <a name="start"></a>
 ##### Table of Contents  
 1. [Khan Academy - Fish Tank (Intro to JS)](#fish)
-2. [Khan Academy - JQuery Quiz (Making webpages interactive with jQuery)](#quiz)
+2. [Khan Academy - Mad Libs (Making webpages interactive)](#quiz)
 3. [Khan Academy - Event Invite (Intro to HTML/CSS)](#invite)
 4. [Khan Academy - Selection sort visualizer (Algorithms)](#sort)
 5. [Khan Academy - Paint Splatter (Natural Simulations)](#splat)
@@ -53,58 +53,49 @@ This project was a good introduction and playground into how and what affects th
 
 
 <a name="quiz"></a>
-### Khan Academy - JQuery Quiz
+### Khan Academy - Mad Libs
 
 ```
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Challenge: jQuery trivia quiz</title>
-<style>
-#result {
-background: rgb(255, 246, 204);
-border: 2px dotted gold;
-font-size: 24px;
-height: 60px;
-margin-top: 10px;
-}
-</style>
-</head>
-<body>
-
-<h1>jQuery Quiz</h1>
-
-<form id="trivia-form">
-<label>
-Who invented jQuery?<br>
-<select id="trivia-answer">
-<option value="eich">Brendan Eich</option>
-<option value="resig">John Resig</option>
-<option value="rossum">Guido van Rossum</option>
-<option value="berners">Tim Berners-Lee</option>
-</select>
-</label> <br>
-<button type="submit">Check Answer</button>
-</form>
-<div id="result"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-$("#trivia-form").on("submit",function(event){
-event.preventDefault();
-var $answer = $("#trivia-answer");
-var answer = $answer.val();
-if(answer === "resig"){
-$("#result").text("You are correct!")}
-else {
-$("#result").text("Try again!");
-}
-
-});
-</script>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+ 
+    <h1>Mad Libs</h1>
+     
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "??Your story here";
+            var noun = document.getElementById("noun").value;
+            var adjective = document.getElementById("adjective").value;
+            var person = document.getElementById("person").value;
+            storyDiv.innerHTML = noun+" noun "+adjective+" adjective "+ person;
+        };
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+  
+ </body>
+</html>
 ```
-This module was useful to learn how to expand the interactivity of a website, something extremely important in the creation of a website. Creating fun and engaging websites in this day and age is important to hold viewer interest which is the ultimate goal of any website. Overall, nothing in this module had a significant impact to me personally, but it was still fun to play around with and to see how stuff I had already learned in the previous module was expanded upon.
+This module was useful to learn how to expand the interactivity of a website albeit in basic ways. This module and the next one have a realy great form of progression to them which made it easy to follow and easy to learn, so I ended up having a really good grasp for on this forthe future. Overall, not much had a large impact on me during this module but I still found it enjoyable.
 
 [Back to the Table of Contents](#start)
 
@@ -388,7 +379,7 @@ This project was early on in the module but was still complex, something I appre
             event.preventDefault();
             var $answer = $(this).find('[type=text]'); 
 ```
-My thoughts here are similar to the other JQuery project. It taught useful skills on how to make websites look nice and have engaging interactivity. Overall I didn't feel a significant impact from the project but I still enjoyed it.
+This module was useful to learn how to expand the interactivity of a website, something extremely important in the creation of a website. Creating fun and engaging websites in this day and age is important to hold viewer interest which is the ultimate goal of any website. Overall, nothing in this module had a significant impact to me personally, but it was still fun to play around with and to see how stuff I had already learned in the previous module was expanded upon.
 
 [Back to the Table of Contents](#start)
 

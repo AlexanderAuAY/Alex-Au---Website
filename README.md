@@ -929,7 +929,7 @@ int batMain(int stats[][5], string names[], int& prog, int& diffi), loss(); //Fu
 main()
 {	
 	//Declares several variables
-	int difficulty,counter,leng,stats [4][5] = {{20,4,3,4,2},{30,1,7,5,3},{15,8,0,2,0},{18,0,2,5,7}},winLoss, exit = 1, prog = 0;
+	int difficulty,counter,leng,stats [4][5] = {{20,4,3,4,2}},{30,1,7,5,3},{15,8,0,2,0},{18,0,2,5,7}},winLoss, exit = 1, prog = 0;
 	string names [4], toriel, difficult;
 	
 	cout << "Welcome to Super Turbo Knuckles Bros 3D Land Deathmatch 2.8 HD Prologue Remix\nElectric Boogaloo All Stars Battle Royale at the Olympic Games Directors Cut\nRemastered Collection Featuring Dante from the Deval May Cry Series and KnucklesFeaturing New Funky Mode\n\n";

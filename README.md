@@ -1166,7 +1166,7 @@ void tutorial (void)
 int batMain(int stats[][5], string names[], int& prog, int& diffi)
 {
 	//declaring variables
-	int winLoss, counter,counter2,counter3,counter4,boosts, points, end = 0, i, move[4], target[4], eMove, eTarget, y, x, death[4] = {0, 0, 0, 0}, tCheck,eStats[5][5]={{50,17,3,15,3},{100,25,1,25,1},{150,20,25,30,20},{300,30,45,1,45},{250,50,45,50,45}};
+	int winLoss, counter,counter2,counter3,counter4,boosts, points, end = 0, i, move[4], target[4], eMove, eTarget, y, x, death[4] = {0, 0, 0, 0}, tCheck,eStats[5][5]={{50,17,3,15,3}},{100,25,1,25,1}},{150,20,25,30,20}},{300,30,45,1,45}},{250,50,45,50,45}}};
 	float damage[4] = {0,0,0,0}, eDamage = 0, health[5];
 	string eName[5] = {"Dad", "Jake Paul", "Logan Paul", "Donald Trump", "Kim Jong Un"}, Statnames[5], mNames[3] = {"spit", "magic ov za deval", "defend"}, bNames[4];
 	

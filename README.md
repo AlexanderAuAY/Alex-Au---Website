@@ -9,8 +9,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```background(89, 216, 255);
-
-
 var centerX = 200;
 var centerY = 100;
 var bodyLength = 118;

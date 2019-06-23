@@ -8,22 +8,36 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+```background(89, 216, 255);
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+var centerX = 200;
+var centerY = 100;
+var bodyLength = 118;
+var bodyHeight = 74;
+var bodyColor = color(162, 0, 255);
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+var drawFish = function(centerX,centerY,bodyHeight,bodyColor)
+{
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+} ;
 
-[Link](url) and ![Image](src)
+drawFish (316,298,84,156);
+drawFish (209,186,15,200);
+drawFish (133,85,126,99);
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

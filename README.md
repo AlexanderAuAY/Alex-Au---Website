@@ -56,7 +56,7 @@ This project was a good introduction and playground into how and what affects th
 
 <a name="quiz"></a>
 ### Khan Academy - Mad Libs
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Mad%20Libs.PNG)
+![alt text](Code%20Previews/Mad%20Libs.PNG)
 ```
 <!DOCTYPE html>
 <html>
@@ -103,7 +103,7 @@ This module was useful to learn how to expand the interactivity of a website alb
 
 <a name="invite"></a>
 ### Khan Academy - Event Invite
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Event%20Invite.PNG)
+![alt text](Code%20Previews/Event%20Invite.PNG)
 ```
 <!DOCTYPE html>
 <html>
@@ -160,7 +160,7 @@ This project was good as an addition onto the first module since it felt like a 
 
 <a name="sort"></a>
 ### Khan Academy - Selection sort visualizer
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Selection%20sort%20visualizer.PNG)
+![alt text](Code%20Previews/Selection%20sort%20visualizer.PNG)
 ```
 var x=25;
 var y=64;
@@ -261,7 +261,7 @@ Algorithms are useful as they're like building and Ikea desk. It's difficult to 
 
 <a name="splat"></a>
 ### Khan Academy - Paint Splatter
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Paint%20Splatter.PNG)
+![alt text](Code%20Previews/Paint%20Splatter.PNG)
 ```
 var generator = new Random(1);
 var standardDeviation = 6;
@@ -308,7 +308,7 @@ This project was early on in the module but was still complex, something I appre
 
 <a name="word"></a>
 ### Khan Academy - Word Game
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Word%20Game.PNG)
+![alt text](Code%20Previews/Word%20Game.PNG)
 ```
 <!DOCTYPE html>
 <html>
@@ -388,7 +388,7 @@ This module was useful to learn how to expand the interactivity of a website, so
 
 <a name="roid"></a>
 ### Khan Academy - Asteroids Spaceship
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Asteroids%20Spaceship.PNG)
+![alt text](Code%20Previews/Asteroids%20Spaceship.PNG)
 ```
 //Left on the keyboard to turn left
 //Right on the keyboard to turn right
@@ -508,7 +508,7 @@ My thoughts here are similar to the previous Natural Simulations project. It was
 
 <a name="21"></a>
 ### Grade 11 - Twenty One Game
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Twenty%20One.PNG)
+![alt text](Code%20Previews/Twenty%20One.PNG)
 ```
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $  Alexander Au                 $
@@ -695,7 +695,7 @@ This project that I did last year was a game of Twenty One. It combined a lot th
 
 <a name="sum"></a>
 ### Grade 11 - Summative
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Summative.PNG)
+![alt text](Code%20Previews/Summative.PNG)
 ```
 //Thomas Wilson & Alex Au 12/1/18
 //Dev C++ 5.11
@@ -1407,7 +1407,7 @@ This was the final project of the year during Grade 11 and really combined every
 
 <a name="fire"></a>
 ### Coding Challenge - Fire
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Fire.PNG)
+![alt text](Code%20Previews/Fire.PNG)
 ```
 let system=[];
 inc = 240;

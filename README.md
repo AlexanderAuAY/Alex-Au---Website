@@ -1,6 +1,6 @@
 ## Welcome to my website!
-Link to repo: https://github.com/AlexanderAuAY/Alex-Au---Website
-.The website is to display my projects over my time in Computer Science in no particular order. 
+Link to repo: https://github.com/AlexanderAuAY/Alex-Au---Website<br/>
+The website is to display my projects over my time in Computer Science in no particular order. 
 
 <a name="start"></a>
 ##### Table of Contents  

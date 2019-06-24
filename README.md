@@ -95,7 +95,7 @@ This project was a good introduction and playground into how and what affects th
  </body>
 </html>
 ```
-This module was useful to learn how to expand the interactivity of a website albeit in basic ways. This module and the next one have a realy great form of progression to them which made it easy to follow and easy to learn, so I ended up having a really good grasp for on this forthe future. Overall, not much had a large impact on me during this module but I still found it enjoyable.
+This module was useful to learn how to expand the interactivity of a website albeit in basic ways. This module and the next one have a realy great form of progression to them which made it easy to follow and easy to learn, so I ended up having a really good grasp for on this for the future. Overall, not much had a large impact on me during this module but I still found it enjoyable.
 
 [Back to the Table of Contents](#start)
 
@@ -500,6 +500,7 @@ draw = function() {
 };
 ```
 My thoughts here are similar to the previous Natural Simulations project. It was complex and promoted you to think independantly which I liked and is a useful skill for life in general. Overall the continuous natural habitat project was the most engaging for me. 
+
 [Back to the Table of Contents](#start)
 
 
@@ -687,6 +688,7 @@ int main()
 
 ```
 This project that I did last year was a game of Twenty One. It combined a lot that I had learned earlier in the course and pushed me to think creatively about how I wanted the process to go, a skill learned similar to Algorithms. Overall it was an enjoyable project that really left an impact on me as it was a culmination of everything I had done.
+
 [Back to the Table of Contents](#start)
 
 <a name="sum"></a>
@@ -1397,6 +1399,7 @@ int loss()
 }
 ```
 This was the final project of the year during Grade 11 and really combined everything I had done thus far. I worked on it with someone else and we effectively split up the work while incorporating everything that we had to. Overall, I enjoyed this project as well since I had a chance to be creative and to work as a team.
+
 [Back to the Table of Contents](#start)
 
 
@@ -1483,4 +1486,4 @@ function mouseDragged() {
   }
 }
 ```
-The goal of this project was to create a project based off of Dan Shiffman's coding train examples. For my group, his example didn't translated well into the plans that we had, so we were forced to improvise and create somthing new with the idea of a fire. This project really pushed me to problem solve and think creatively with the fact that we had to come up with something from scratch from an idea. This will be a useful expreience to have later on if I ever decide to pursue programming even further. Overall the biggest impact that this project had was the moment previouly mentioned. I really allowed me to experiement and take things the way I wanted to.
+The goal of this project was to create a project based off of Dan Shiffman's coding train examples. For my group, his example didn't translated well into the plans that we had, so we were forced to improvise and create somthing new with the idea of a fire. This project really pushed me to problem solve and think creatively with the fact that we had to come up with something from scratch from an idea. This will be a useful expreience to have later on if I ever decide to pursue programming even further. Overall the biggest impact that this project had was the moment previouly mentioned. It really allowed me to experiement and take things the way I wanted to.

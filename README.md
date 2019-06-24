@@ -17,7 +17,7 @@ The website is to display my projects over my time in Computer Science in no par
 
 <a name="fish"></a>
 ### Khan Academy - Fish Tank
-![alt text](https://github.com/AlexanderAuAY/Alex-Au---Website/blob/master/Code%20Previews/Fish%20Tank.PNG)
+![alt text](Code%20Previews/Fish%20Tank.PNG)
 
 ```
 background(89, 216, 255);
